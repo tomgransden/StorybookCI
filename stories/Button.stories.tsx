@@ -11,6 +11,6 @@ export default {
 export const Basic: StoryFn<typeof MyButton> = args => <MyButton {...args} />;
 
 Basic.args = {
-  text: 'Hello World',
+  text: 'Hello Tom',
   color: 'purple',
 };
