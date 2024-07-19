@@ -13,6 +13,7 @@ const config: StorybookConfig = {
     '@chromatic-com/storybook',
     '@storybook/addon-interactions',
     '@storybook/addon-react-native-web',
+    '@storybook/addon-viewport',
   ],
   framework: {
     name: '@storybook/react-webpack5',

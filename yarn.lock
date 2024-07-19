@@ -3074,7 +3074,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-viewport@npm:8.2.4":
+"@storybook/addon-viewport@npm:8.2.4, @storybook/addon-viewport@npm:^8.2.4":
   version: 8.2.4
   resolution: "@storybook/addon-viewport@npm:8.2.4"
   dependencies:
@@ -4462,6 +4462,7 @@ __metadata:
     "@storybook/addon-links": ^8.2.4
     "@storybook/addon-onboarding": ^8.2.4
     "@storybook/addon-react-native-web": ^0.0.24
+    "@storybook/addon-viewport": ^8.2.4
     "@storybook/addon-webpack5-compiler-swc": ^1.0.4
     "@storybook/blocks": ^8.2.4
     "@storybook/react": ^8.2.4

@@ -10,6 +10,7 @@ export type ButtonProps = {
 
 const styles = StyleSheet.create({
   button: {
+    width: '100%',
     paddingVertical: 8,
     paddingHorizontal: 16,
     borderRadius: 8,
@@ -19,7 +20,6 @@ const styles = StyleSheet.create({
     height: 40,
     justifyContent: 'center',
     alignItems: 'center',
-    minWidth: 200,
   },
   buttonText: {
     color: 'white',
