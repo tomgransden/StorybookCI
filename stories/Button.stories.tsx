@@ -10,6 +10,10 @@ export default {
 
 export const Basic: StoryFn<typeof MyButton> = args => <MyButton {...args} />;
 
+export const Disabled: StoryFn<typeof MyButton> = args => (
+  <MyButton {...args} disabled={true} />
+);
+
 Basic.args = {
   text: 'Hello Tom',
   color: 'purple',

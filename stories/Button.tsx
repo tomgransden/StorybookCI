@@ -6,6 +6,7 @@ export type ButtonProps = {
   text: string;
   color?: string;
   textColor?: string;
+  disabled?: boolean;
 };
 
 const styles = StyleSheet.create({
@@ -16,14 +17,13 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     alignSelf: 'flex-start',
     flexGrow: 0,
-    backgroundColor: 'purple',
     height: 40,
     justifyContent: 'center',
     alignItems: 'center',
   },
   buttonText: {
     color: 'white',
-    fontSize: 16,
+    fontSize: 24,
     fontWeight: 'bold',
   },
   buttonContainer: {
@@ -32,10 +32,16 @@ const styles = StyleSheet.create({
   },
 });
 
-export const MyButton = ({text, onPress, color, textColor}: ButtonProps) => (
+export const MyButton = ({
+  text,
+  onPress,
+  color,
+  textColor,
+  disabled,
+}: ButtonProps) => (
   <View style={styles.buttonContainer}>
     <TouchableOpacity
-      style={[styles.button, !!color && {backgroundColor: color}]}
+      style={[styles.button, {backgroundColor: disabled ? 'gray' : color}]}
       onPress={onPress}
       activeOpacity={0.8}>
       <Text style={[styles.buttonText, !!textColor && {color: textColor}]}>
